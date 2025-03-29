@@ -5,10 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Find a Medic</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    {% load static %}
 </head>
-<body class="bg-gray-200 flex justify-center items-center min-h-screen p-4">
-    <div class="w-full max-w-7xl bg-white p-8 rounded-lg shadow-lg">
+<body class="bg-gray-100 flex justify-center items-start min-h-screen p-0">
+    <div class="w-full h-screen bg-white p-8 rounded-lg shadow-lg">
         <div class="flex items-center justify-between pb-4 border-b">
             <div class="flex items-center gap-4">
                 <button class="text-3xl md:text-4xl">&#9776;</button>
@@ -19,7 +18,7 @@
         <div class="mt-4 flex justify-between items-center gap-4">
             <input type="text" id="searchBar" placeholder="Search..." class="border px-4 py-2 w-full md:w-2/3 text-lg rounded-lg border-pink-500">
             <div class="flex gap-2">
-                <button id="backBtn" class="bg-pink-500 text-white px-6 py-3 rounded-lg font-semibold text-lg" onclick="window.location.href='{% url 'medication' %}'">Back</button>
+                <button id="backBtn" class="bg-pink-500 text-white px-6 py-3 rounded-lg font-semibold text-lg" onclick="window.location.href=''">Back</button>
                 <button id="filterBtn" class="bg-pink-500 text-white px-6 py-3 rounded-lg font-semibold text-lg">Filter</button>
             </div>
         </div>
